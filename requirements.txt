@@ -1,0 +1,5 @@
+pandas==1.2.0
+matplotlib>=3
+numpy>=1.13.0
+seaborn>=0.8.1
+bokeh==2.2.3
