@@ -1,6 +1,6 @@
 # AirBNB_DataChallege
 
-<img src="image/statueofl.jpg" width=900 height=300/>
+<img src="image/statueofl.jpg" width=900 height=450/>
 
 <h1 style="color:black;">Airbnb Data Challenge</h1>
 
@@ -34,14 +34,14 @@ Zillow data, monthly property costs are in columns which are not a friendly stru
 <b>Airbnb</b>
 <ul>
 <li><b>Missing Value</b>: I removed columns that have data less than 80% and filled zero in null values.</li>
-<li><b>Remove unrelevant records</b>:</li>
+<li><b>Remove irrelevant records</b>:</li>
 <ul>
 <li>I removed records where state is in CA and NJ.</li>
 <li>Since our analysis is for 2 bedroom property, so I removed those records that were not 2 bedroom property.</li>
 </ul>
-<li><b>Fomat correction</b>:</li>
+<li><b>Format correction</b>:</li>
 <ul>
-<li>State: some records used state abbreviaton, some were written in full.</li>
+<li>State: some records used state abbreviation, some were written in full.</li>
 <li>Zip Code: There are 5 records formatted ZIP+4 and 515 records missing zip code</li>
 <li>Price: I remove `$` and , characters.</li>
 </ul>
@@ -105,5 +105,38 @@ From my findings, I found Top 3 of the zip codes in New York City that are most 
 
 </p>
 
+<img src="image/avg_rent.png" />
+
+<p>
+<i><b>However</b></i>, not all three of them will give you the best ROI.From Zillow dataset, I pulled the most recent year (201601-201706) house price statistics in those zip codes. You can see the lowest average house value and the best average price per night among those zip code is <b>10036:</b> an average of USD367 per night and average sales price of USD1.7 million 
+    
+</p>    
+
+<img src="image/zip_sorted.png" />
+
+
+<p>
+From the dataset, you know which zip code is the most profitable in New York City. But other question is where is it exactly or another words which area or neiborhood that has the highest average price per night. The table below shows top 3 neighborhoods in 10036 that have the highest average price per night. 
+</p>
+
+<img src="image/top3.png" />
+
+
+
+And if you are not familiar with New York City area, the map below shows where the most profitable ROI in Mahattan New Yor City and the city view.
+
+
+<img src="image/nyc_map.png" />
+
+
+
+
+<h1 style="color:black;">Recommendations</h1>
+
+Based on my analysis: <b>Theatre district Area in Zip Code 10036 would give you the best ROI</b> 
+
+If you rent out at an average price of `$367` per night at 75% occupancy rate, you would make `$100k` a year. You would break even after 17.5 years.
+
+However, there are a few number of choices that you can explicitly look at low end properties and more likely to get booked. Besides 10036, my second and third choice for investing would be 10003 and 10011.  
 
 
